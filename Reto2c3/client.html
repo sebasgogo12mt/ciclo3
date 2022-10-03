@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Clientes</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/client.js"></script>
+<button onclick="location.href='index.html'">HOME</button>
+
+<body class="text-primary w-50 h-50 text-center bg-dark"
+    style="	background-image: url(index.jpg);	background-position: top left;	background-size: 100%;	background-repeat: repeat;">
+    <br>
+    <br>
+    <br>
+
+    <center>
+        <h1 style="color: rgb(255, 251, 0);">GESTION DE CLIENTES</h1>
+
+        <span style="color: rgb(255, 251, 0);">
+            Id del cliente:<input type="number" id="idCliente"><br>
+            Nombre del cliente:<input type="text" id="nombreCliente"><br>
+            Correo del cliente: <input type="texto" id="emailCliente"><br>
+            Edad del cliente: <input type="number" id="edadCliente"><br>
+            <br>
+            <br>
+            <button onclick="guardarCliente()">GUARDAR CLIENTE</button>
+            <button onclick="editarCliente()">ACTUALIZAR CLIENTE</button>
+            <button onclick="leerClientes()">MOSTRAR CLIENTES</button>
+    </center>
+    <br>
+    <div id="listaClientes">
+
+    </div>
+
+
+</body>
+
+</html>

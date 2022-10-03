@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Disfraces</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/costume.js"></script>
+<button onclick="location.href='index.html'">HOME</button>
+
+<body
+    style="background-image: url(index.jpg);	background-position: top left;	background-size: 100%;	background-repeat: repeat;">
+    <center>
+        <h1 style="color: rgb(255, 251, 0);">GESTION DE DISFRACES</h1>
+        <br>
+        <br>
+        <br>       
+        <span style="color: rgb(255, 251, 0);">
+            Id del disfraz: <input type="number" id="idDisfraz"><br>
+            Marca del disfraz: <input type="text" id="marcaDisfraz"><br>
+            Modelo del disfraz: <input type="number" id="modeloDisfraz"><br>
+            Categoria del disfraz: <input type="number" id="categoriaDisfraz"><br>
+            Nombre del disfraz: <input type="texto" id="nombreDisfraz"><br>
+        </span>
+        <button onclick="guardarDisfraz()">GUARDAR DISFRAZ</button>
+        <button onclick="editarDisfraz()">ACTUALIZAR DISFRAZ</button>
+        <button onclick="leerDisfraces()">MOSTRAR DISFRACES</button>
+    </center>
+    <br>
+    <div id="listaDisfraces">
+
+    </div>
+
+
+</body>
+
+</html>

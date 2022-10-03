@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mensajes</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/message.js"></script>
+<button onclick="location.href='index.html'">HOME</button>
+
+<body
+    style="background-image: url(index.jpg);	background-position: top left;	background-size: 100%;	background-repeat: repeat;">
+    <center>
+        <h1 style="color: rgb(255, 251, 0);">Mensajes!</h1>
+        <br>
+        <br>
+        <br>
+        <span style="color: rgb(255, 251, 0);">
+            Id del mensaje: <input type="number" id="idMensaje"><br>
+            Contenido del mensaje: <input type="text" id="textoMensaje"><br>
+        </span>
+
+        <button onclick="guardarMensaje()">REGISTRAR MENSAJE</button>
+        <button onclick="editarMensaje()">EDITAR MENSAJE</button>
+        <button onclick="leerMensajes()">MOSTRAR MENSAJES</button>
+    </center>
+    <br>
+    <div id="listaMensajes">
+
+    </div>
+
+
+</body>
+
+</html>
